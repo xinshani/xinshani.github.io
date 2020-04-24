@@ -166,15 +166,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2020-04-23T15:59:16+08:00"
-              content="2020-04-23">
-          04-23
+              datetime="2020-04-24T10:37:38+08:00"
+              content="2020-04-24">
+          04-24
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/posts/43ee71e3/" itemprop="url">
-            <span itemprop="name">公告</span>
+          <a class="post-title-link" href="/posts/5e245fa/" itemprop="url">
+            <span itemprop="name">Mac应用集合</span>
           </a>
       </div>
 
@@ -186,15 +186,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2020-04-20T12:09:32+08:00"
-              content="2020-04-20">
-          04-20
+              datetime="2020-04-23T15:59:16+08:00"
+              content="2020-04-23">
+          04-23
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/posts/4a17b156/" itemprop="url">
-            <span itemprop="name">Hello World</span>
+          <a class="post-title-link" href="/posts/43ee71e3/" itemprop="url">
+            <span itemprop="name">公告</span>
           </a>
       </div>
 
@@ -276,6 +276,10 @@
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -382,6 +386,35 @@
   
 
   
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'uaM9PK5F7zu93IDlOIOKEb6h-gzGzoHsz',
+      appKey     : 'ywi6c8RgfwnzC1IHncEPzshR',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
